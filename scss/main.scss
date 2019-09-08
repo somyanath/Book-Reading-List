@@ -1,0 +1,125 @@
+$purple-color: #9361bf;
+
+body {
+  font-family: Tahoma;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  border: solid 1px lightgray;
+  border-radius: 6px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 0 0 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+header {
+  background: #eee;
+  padding: 10px 0;
+
+  h1 {
+    // width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  input {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
+
+.book-list,
+#add-book {
+  margin: 30px;
+}
+
+.book-list {
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 20px;
+    border-left: solid 5px lightgray;
+    margin: 20px 10px;
+
+    &:hover {
+      border-color: $purple-color;
+    }
+  }
+
+  .delete {
+    float: right;
+    background-color: $purple-color;
+    padding: 6px;
+    border-radius: 4px;
+    color: white;
+
+    &:hover {
+      background-color: lighten(black, 20);
+      cursor: pointer;
+    }
+  }
+}
+
+#add-book {
+  width: 400px;
+  margin: 0 auto;
+
+  input {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+
+    &[type="checkbox"] {
+      width: 150px;
+    }
+  }
+  
+  button {
+    background-color: $purple-color;
+    border: solid 1px $purple-color;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: 100px;
+    float: left;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  label {
+    line-height: 52px;
+  }
+}
