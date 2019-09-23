@@ -120,4 +120,13 @@ header input {
 #add-book label {
   line-height: 52px;
 }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: Tahoma;
+  font-size: 1.2rem;
+  color: #9361bf;
+  height: 30px;
+}
 /*# sourceMappingURL=main.css.map */

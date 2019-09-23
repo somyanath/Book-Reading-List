@@ -123,3 +123,13 @@ header {
     line-height: 52px;
   }
 }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: Tahoma;
+  font-size: 1.2rem;
+  color: $purple-color;
+  height: 30px;
+  // bottom: 0;
+}
