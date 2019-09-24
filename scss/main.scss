@@ -1,6 +1,20 @@
 $purple-color: #9361bf;
 
+html {
+  height: 95%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 50px;
   font-family: Tahoma;
   color: #444;
   letter-spacing: 1px;
@@ -11,15 +25,16 @@ h1, h2 {
 }
 
 .container {
-  width: 90%;
-  max-width: 960px;
-  border: solid 1px lightgray;
-  border-radius: 6px;
-  margin: 20px auto;
-  box-sizing: border-box;
-  padding: 0 0 20px;
-  overflow: hidden;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+
+  .box {
+    border: solid 1px lightgray;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
 }
 
 header {
@@ -125,11 +140,12 @@ header {
 }
 
 #main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 1rem;
+  margin-top: 10px;
   font-family: Tahoma;
   font-size: 1.2rem;
   color: $purple-color;
-  height: 30px;
-  // bottom: 0;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Reading List</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <header>
+        <h1>Book Reading List</h1>
+        <form id="search-books">
+          <input type="text" placeholder="Search Books....">
+        </form>
+      </header>
+
+      <div class="book-list">
+        <h1>Books To Read</h1>
+        <ul>
+          <li>
+            <span class="name">Rich Dad Poor Dad</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">Atomic Habits</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">4 Hour Work Week</span>
+            <span class="delete">delete</span>
+          </li>
+          <li>
+            <span class="name">The Wise Man's fear</span>
+            <span class="delete">delete</span>
+          </li>
+        </ul>
+      </div>
+
+      <form id="add-book">
+        <input type="checkbox" id="hide">
+        <label for="hide">Hide all books</label><br>
+        <input type="text" placeholder="Add a book...">
+        <button>Add</button>
+      </form>
+    </div>
+
+    <footer id="main-footer">
+      Created by Somyanath Mohanty &copy;, 2019
+    </footer>
+  </div>
+  <script src="./dist/app.js"></script>
+</body>
+
+</html>
